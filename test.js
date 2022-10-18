@@ -63,14 +63,11 @@ let api_path_templates =
 	"/api/items/%id%/%salary%"
 ];
 
-
 let api = new Api();
 
 let api_paths = api_path_templates.map((api_path_template) =>
 {
-
 	return api.get_api_path(user, api_path_template);
-
 });
 
 console.log(JSON.stringify(api_paths));
